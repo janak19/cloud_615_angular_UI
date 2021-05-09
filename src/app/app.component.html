@@ -17,8 +17,8 @@
 
      <!-- Main Input For Receiving Query to our ML -->
      <form [formGroup]="checkoutForm"  (ngSubmit)="onSubmit(checkoutForm.value)">
-        <input type="text" formControlName="rm" id="rm" placeholder="enter rm value" required="required"/>
-		<input type="text" formControlName="lstat" id="lstat" placeholder="enter lstat value" required="required" />
+        <input type="text" formControlName="rm" id="rm" placeholder="enter number of rooms" required="required"/>
+		<input type="text" formControlName="lstat" id="lstat" placeholder="enter sociaeconomic value (1 to 38)" required="required" />
 
 
         <button type="submit" class="btn btn-primary btn-block btn-large" >Predict housing price</button>
